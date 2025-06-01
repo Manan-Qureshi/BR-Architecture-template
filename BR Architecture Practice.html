@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .Header{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 4px;
+            color: rgb(45, 45, 45);
+        }
+        span{
+            letter-spacing: 3px;
+            margin-right: 10px;
+            padding-left: 20px;
+        }
+        .Header nav{
+            background-color: white;
+            width: 100%;
+            height: 55px;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
+        .Header nav ul {
+            display: flex;
+            padding-top: 15px;
+        }
+        .Header nav ul{
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Header nav ul{
+            list-style: none;
+        }
+        .HeaderLeft ul{
+            display: flex;
+            list-style: none;
+        }
+        .HeaderLeft ul li{
+            margin: 0 20px 0 20px;
+        }
+        .Architecture{
+            background-image: url(BR\ Architecture.jpg);
+            width: 100%;
+            height: 700px;
+        }
+        .Architecture pre{
+            text-align: center;
+            padding-top: 400px;
+            font-size: 40px;
+            color: white;
+        }
+        .Architecture span{
+            background-color: rgb(48, 47, 47);
+            padding: 10px 13px 10px 13px;
+        }
+        .projects p{
+            font-size: 30px;
+            padding-left: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .ProjectPicture1 , .ProjectPicture2{
+            margin-bottom: 170px;
+            display: flex;
+        }
+        .projects img{
+            width: 200;
+            height: 200px;
+            margin: 10px 0 0 30px;
+        }
+        .summar p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        }
+        .summar span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .brick p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        }
+        .brick span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .renovated p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        }
+        .renovated span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .barn p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        } 
+        .barn span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .brick1 p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        }
+        .brick1 span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .summar1 p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        }
+        .summar1 span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .barn1 p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        }
+        .barn1 span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .renovated1 p{
+            margin-top: -190px;
+            color: white;
+            font-size: 15px;
+            padding-left: -30px;
+            margin-left: -10px;
+        }
+        .renovated1 span{
+            background-color: black;
+            padding: 15px 10px 10px 10px;
+        }
+        .about p{
+            font-size: 30px;
+            padding-left: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .about .p1{
+            font-size: 15px;
+            margin-right: 40px;
+        }
+        .AboutPicture{
+            display: flex;
+            margin-bottom: 70px;
+        }
+        .AboutPicture img{
+            width: 300px;
+            height: 200px;
+            margin: 10px 0 0 15px;
+        }
+        .AboutPicture ,h2 ,h4{
+            padding: 10px 0 10px 15px;
+        }
+        .AboutPicture p{
+            margin-left: 20px;
+        }
+         button{
+            width: 90%;
+            margin: 10px 10px 0 15px;
+            height: 40px;
+            border-style: none;
+            font-size: 17px;
+        }
+        button:hover{
+            background-color: rgb(203, 200, 200);
+
+        }
+        .contact h2, p{
+            margin-left: 30px;
+        }
+        .contact p{
+            font-size: 17px;
+        }
+        .contact input{
+            padding: 13px;
+            margin: 5px 0 5px 35px;
+            width: 93%;
+            border: 1px solid grey;
+            font-size: 15px;
+        }
+        .contact button{
+            width: 160px;
+            background-color: black;
+            color: white;
+            margin: 30px 0 50px 35px;
+        }
+        .map img{
+            width: 95%;
+            height: 700px;
+            margin: 10px 0 7px 40px;
+        }
+        .footer{
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            font-size: 17px;
+            color: white;
+            background-color: black;
+        }
+        .footer p{
+            padding-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <nav>
+            <ul>
+                <li><span><b>BR</b></span></li>
+                <li>Architects</li>
+            </ul>
+            <div class="HeaderLeft">
+                <ul>
+                     <li>Projects</li>
+                     <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="Architecture">
+        <pre><span><b>BR</b></span> Architects</pre>
+    </div>
+    <br>
+    <br><br>
+    <div class="projects">
+        <p>Projects</p>
+        <br><hr><br>
+       <div class="ProjectPictures">
+        <div class="ProjectPicture1">
+            <div class="summar">
+                <img src="Summer house.jpg" alt="">
+                <p><span>Summar House</span></p>
+            </div>
+            <div class="brick">
+                <img src="Brick house.jpg" alt="">
+                <p><span>Brick House</span></p>
+            </div>
+            <div class="renovated">
+                <img src="Renovated.jpg" alt="">
+                <p><span>Renovated</span></p>
+            </div>
+            <div class="barn">
+                <img src="Barn house.jpg" alt="">
+                <p><span>Barn House</span></p>
+            </div>
+        </div>
+        <div class="ProjectPicture2">
+            <div class="brick1">
+                <img src="Brick house.jpg" alt="">
+                <p><span>Brick House</span></p>
+            </div>
+            <div class="summar1">
+                <img src="Summer house.jpg" alt="">
+                <p><span>Summar House</span></p>
+            </div>
+            <div class="barn1">
+                <img src="Barn house.jpg" alt="">
+                <p><span>Barn House</span></p>
+            </div>
+            <div class="renovated1">
+                <img src="Renovated.jpg" alt="">
+                <p><span>Renovated</span></p>
+            </div>
+        </div>
+       </div>
+    </div>
+    <br><br><br>
+    <div class="about">
+        <p>About</p>
+        <br><hr><br>
+        <P class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At tempora minima impedit nisi, eaque libero, saepe sint nihil exercitationem iure neque amet nobis cum itaque necessitatibus a rerum labore iusto ducimus totam repellat. Ipsum sit mollitia asperiores similique blanditiis molestiae cupiditate consequatur saepe! Nostrum odit libero esse. Cupiditate ipsa sunt dignissimos! Dolor, ducimus reiciendis modi enim sapiente optio praesentium ut quis consectetur aliquam alias labore dolorem! Quam cumque, fuga, nostrum in omnis amet delectus eaque veniam corrupti harum provident! Amet!</P>
+    </div>
+        <div class="AboutPicture">
+            <div class="jhon">
+                <img src="Jhon Doe.jpg" alt="">
+                <h2>Jhon Doe</h2>
+                <h4>CEO & Founder</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>contact</button>
+            </div>
+            <div class="jane">
+                <img src="Jane Doe.jpg" alt="">
+                <h2>Jane Doe</h2>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>contact</button>
+            </div>
+            <div class="mike">
+                <img src="Mike Ross.jpg" alt="">
+                <h2>Mike Ross</h2>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>contact</button>
+            </div>
+            <div class="dan">
+                <img src="Dan Star.jpg" alt="">
+                <h2>Dan Star</h2>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>contact</button>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <br><hr><br>
+            <p>Lets get in touch and talk about your next project.</p>
+            <input type="text" name="" id="" placeholder="Name"><br>
+            <input type="email" name="" id="" placeholder="Email"><br>
+            <input type="text" name="" id="" placeholder="Subject"><br>
+            <input type="text" placeholder="Comment"><br>
+            <button>SEND MESSAGE</button>
+        </div>
+        <div class="map">
+            <img src="img 8.jpg" alt="image not found">
+        </div>
+        <div class="footer">
+            <p>Powered by <u>Manan Qureshi</u></p>
+        </div>
+</body>
+</html>
